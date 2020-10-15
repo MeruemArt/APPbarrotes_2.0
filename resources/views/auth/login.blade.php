@@ -25,12 +25,12 @@
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
 
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-	
+
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 
 	<link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    
+
     <!-- iCheck -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css">
 
@@ -42,18 +42,21 @@
     <![endif]-->
 
 </head>
-<body class="hold-transition login-page" style="background-image: url('images/bg-01.jpg');">
+<body class="hold-transition login-page" style="background-image: url('images/fondo.png');">
+<div class="login-logo">
+    <a href="{{ url('/home') }}"><b> APPbarrotes </b>Login</a>
+</div>
 <div class="login-box" >
-    <div class="login-logo">
-        <a href="{{ url('/home') }}"><b> APPbarrotes </b>Login</a>
-    </div>
+
+
 
     <!-- /.login-logo -->
     <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100 p-t-30 p-b-50">
         <span class="login100-form-title p-b-41">
-            Account Login
+           <p><img src="images/icons/Icono.ico"></p>
+            Iniciar sesión
         </span>
 
         <form class="login100-form validate-form p-b-33 p-t-5" method="post" action="{{ url('/login') }}">
@@ -89,13 +92,13 @@
                     <button type="submit" class="login100-form-btn">Sign In</button>
                 </div>
                 <!-- /.col -->
-            
+
         </form>
 
         <a href="{{ url('/password/reset') }}">I forgot my password</a><br>
         <a href="{{ url('/register') }}" class="text-center">Register a new membership</a>
 
-    
+
     </div>
     </div>
     <!-- /.login-box-body -->
