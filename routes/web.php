@@ -39,3 +39,5 @@ Route::post(
 
 
 Route::resource('proveedores', App\Http\Controllers\proveedoresController::class);
+
+Route::resource('detallePedidos', App\Http\Controllers\detalle_pedidoController::class);

@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a384c284-1393-4819-a57a-446a834f891b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/proveedoresAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/proveedoresController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/CreateproveedoresAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/UpdateproveedoresAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreateproveedoresRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateproveedoresRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/proveedores.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/proveedoresRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/proveedores/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/proveedores/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/proveedores/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/proveedores/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/proveedores/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/proveedores/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/proveedores/table.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +190,7 @@
       <updated>1602219672648</updated>
       <workItem from="1602219684689" duration="4347000" />
       <workItem from="1602718898294" duration="4341000" />
-      <workItem from="1602728363455" duration="24882000" />
+      <workItem from="1602728363455" duration="25472000" />
     </task>
     <servers />
   </component>
