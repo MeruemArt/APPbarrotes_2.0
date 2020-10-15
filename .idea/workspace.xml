@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a384c284-1393-4819-a57a-446a834f891b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/AdminLTE.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/_all-skins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/LogoAPPb.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/AdminLTE.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/AdminLTE.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +194,7 @@
       <updated>1602219672648</updated>
       <workItem from="1602219684689" duration="4347000" />
       <workItem from="1602718898294" duration="4341000" />
-      <workItem from="1602728363455" duration="19129000" />
+      <workItem from="1602728363455" duration="23077000" />
     </task>
     <servers />
   </component>
