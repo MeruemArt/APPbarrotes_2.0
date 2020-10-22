@@ -93,7 +93,14 @@ body {
 
 .content-wrapper {
 	min-height: 100%;
-	background-color: #D2D6DE;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(95%, rgba(163,163,163,1)), color-stop(100%, rgba(163,163,163,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a3a3a3', GradientType=1 );
 	z-index: 800
 }
 
@@ -565,7 +572,7 @@ a:focus {
 }
 
 .sidebar-menu>li>a {
-	padding: 12px 5px 12px 15px;
+	padding: 12px 10px 2px 25px;
 	display: block
 }
 
@@ -631,8 +638,8 @@ a:focus {
 		-ms-transform: translate(0, 0);
 		-o-transform: translate(0, 0);
 		transform: translate(0, 0);
-		width: 80px !important;
-		z-index: 850
+		width: 80px !important; /*Tamaño de Logo Perfil barra izquierda*/
+		z-index: 50
 	}
 	.sidebar-mini.sidebar-collapse .sidebar-menu>li {
 		position: relative
@@ -641,10 +648,10 @@ a:focus {
 		margin-right: 0
 	}
 	.sidebar-mini.sidebar-collapse .sidebar-menu>li>a>span {
-		border-top-right-radius: 4px
+		border-top-right-radius: 40px /*Redondes del spam de la barra*/
 	}
 	.sidebar-mini.sidebar-collapse .sidebar-menu>li:not(.treeview)>a>span {
-		border-bottom-right-radius: 4px
+		border-bottom-right-radius: 40px /*Redondes del spam de la barra*/
 	}
 	.sidebar-mini.sidebar-collapse .sidebar-menu>li>.treeview-menu {
 		padding-top: 5px;
@@ -661,7 +668,7 @@ a:focus {
 		-webkit-transform: translateZ(0)
 	}
 	.sidebar-mini.sidebar-collapse .main-header .logo {
-		width: 80px
+		width: 80px /*logo superior izquierdo*/
 	}
 	.sidebar-mini.sidebar-collapse .main-header .logo>.logo-mini {
 		display: block;
@@ -674,15 +681,15 @@ a:focus {
 	}
 	.sidebar-mini.sidebar-collapse .main-header .navbar {
 		margin-left: 80px
-	}
+	} /*Icono superior izquierdo*/
 }
 
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>span:not(.pull-right),
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>.treeview-menu {
 	display: block !important;
 	position: absolute;
-	width: 180px;
-	left: 80px
+	width: 180px; /*tamaño de la lengueta*/
+	left: 62px      /*donde empiezan las letras de la lengueta*/
 }
 
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>span {
@@ -727,7 +734,7 @@ a:focus {
 }
 
 .sidebar-menu:hover {
-	overflow: visible
+	overflow: visible;
 }
 
 .sidebar-form,

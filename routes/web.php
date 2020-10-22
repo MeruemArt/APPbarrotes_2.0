@@ -41,3 +41,31 @@ Route::post(
 Route::resource('proveedores', App\Http\Controllers\proveedoresController::class);
 
 Route::resource('detallePedidos', App\Http\Controllers\detalle_pedidoController::class);
+
+Route::resource('confEmpresas', App\Http\Controllers\conf_empresaController::class);
+
+Route::resource('confEmpresas', App\Http\Controllers\conf_empresaController::class);
+
+Route::resource('confEmpresas', App\Http\Controllers\conf_empresaController::class);
+
+Route::resource('confEmpresas', App\Http\Controllers\conf_empresaController::class);
+
+Route::resource('pedidos', App\Http\Controllers\pedidoController::class);
+
+Route::resource('devolucions', App\Http\Controllers\devolucionController::class);
+
+Route::resource('detalleRecepcions', App\Http\Controllers\detalle_recepcionController::class);
+
+Route::resource('estadoProductos', App\Http\Controllers\estado_productoController::class);
+
+Route::resource('clientes', App\Http\Controllers\clienteController::class);
+
+Route::resource('productos', App\Http\Controllers\productoController::class);
+
+Route::resource('invProductos', App\Http\Controllers\inv_productoController::class);
+
+Route::resource('invProductos', App\Http\Controllers\inv_productoController::class);
+
+Route::resource('productoDevolucions', App\Http\Controllers\producto_devolucionController::class);
+
+Route::resource('productoDevolucions', App\Http\Controllers\producto_devolucionController::class);
