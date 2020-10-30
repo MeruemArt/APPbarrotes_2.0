@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use app\Models\User;
 use App\Http\Requests\CreateclienteRequest;
 use App\Http\Requests\UpdateclienteRequest;
 use App\Repositories\clienteRepository;
@@ -42,7 +43,11 @@ class clienteController extends AppBaseController
      */
     public function create()
     {
-        return view('clientes.create');
+        
+      /*  $users=user::all()->pluck('name','id');*/
+      
+        return view('clientes.create')/*->with('users',$users)*/;
+       
     }
 
     /**

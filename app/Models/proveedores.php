@@ -53,7 +53,7 @@ class proveedores extends Model
         'nombre' => 'required',
         'nit' => 'required',
         'direccion' => 'required',
-        'user_id' => 'required'
+        /*'user_id' => 'required'*/
     ];
 
     /**

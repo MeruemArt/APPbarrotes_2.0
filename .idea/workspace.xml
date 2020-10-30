@@ -2,160 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a384c284-1393-4819-a57a-446a834f891b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/clienteAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/conf_empresaAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/detalle_recepcionAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/devolucionAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/estado_productoAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/inv_productoAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/pedidoAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/productoAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/producto_devolucionAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/clienteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/conf_empresaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/detalle_recepcionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/devolucionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/estado_productoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/inv_productoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/pedidoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/productoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/producto_devolucionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/CreateclienteAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Createconf_empresaAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Createdetalle_recepcionAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/CreatedevolucionAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Createestado_productoAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Createinv_productoAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/CreatepedidoAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/CreateproductoAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Createproducto_devolucionAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/UpdateclienteAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Updateconf_empresaAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Updatedetalle_recepcionAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/UpdatedevolucionAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Updateestado_productoAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Updateinv_productoAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/UpdatepedidoAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/UpdateproductoAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/API/Updateproducto_devolucionAPIRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreateclienteRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Createconf_empresaRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Createdetalle_recepcionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreatedevolucionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Createestado_productoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Createinv_productoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreatepedidoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreateproductoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Createproducto_devolucionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateclienteRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Updateconf_empresaRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Updatedetalle_recepcionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdatedevolucionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Updateestado_productoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Updateinv_productoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdatepedidoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateproductoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Updateproducto_devolucionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/cliente.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/conf_empresa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/detalle_recepcion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/devolucion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/estado_producto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/inv_producto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/pedido.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/producto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/producto_devolucion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/clienteRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/conf_empresaRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/detalle_recepcionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/devolucionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/estado_productoRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/inv_productoRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/pedidoRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/productoRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/producto_devolucionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_160440_create_conf_empresa_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_161751_create_pedido_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_162921_create_devolucion_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_163324_create_detalle_recepcion_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_163520_create_estado_producto_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_164008_create_cliente_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_213147_create_producto_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_215818_create_inv_producto_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_004101_create_producto_devolucion_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Icono.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/clientes/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conf_empresas/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conf_empresas/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conf_empresas/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conf_empresas/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conf_empresas/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conf_empresas/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conf_empresas/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/detalle_recepcions/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/detalle_recepcions/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/detalle_recepcions/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/detalle_recepcions/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/detalle_recepcions/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/detalle_recepcions/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/detalle_recepcions/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/devolucions/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/devolucions/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/devolucions/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/devolucions/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/devolucions/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/devolucions/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/devolucions/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/estado_productos/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/estado_productos/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/estado_productos/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/estado_productos/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/estado_productos/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/estado_productos/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/estado_productos/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/inv_productos/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/inv_productos/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/inv_productos/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/inv_productos/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/inv_productos/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/inv_productos/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/inv_productos/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pedidos/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pedidos/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pedidos/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pedidos/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pedidos/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pedidos/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pedidos/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/producto_devolucions/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/producto_devolucions/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/producto_devolucions/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/producto_devolucions/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/producto_devolucions/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/producto_devolucions/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/producto_devolucions/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/productos/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/productos/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/productos/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/productos/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/productos/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/productos/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/productos/table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/AdminLTE.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/_all-skins.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/AdminLTE.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/AdminLTE.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/_all-skins.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/_all-skins.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -304,7 +156,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Documents/Laravel/APPbarrotes" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -346,7 +198,9 @@
       <workItem from="1602718898294" duration="4341000" />
       <workItem from="1602728363455" duration="25474000" />
       <workItem from="1603289643740" duration="10090000" />
-      <workItem from="1603315203163" duration="14611000" />
+      <workItem from="1603315203163" duration="22598000" />
+      <workItem from="1603396264119" duration="4398000" />
+      <workItem from="1603638375859" duration="666000" />
     </task>
     <servers />
   </component>

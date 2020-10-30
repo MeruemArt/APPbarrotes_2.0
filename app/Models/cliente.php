@@ -53,7 +53,7 @@ class cliente extends Model
      */
     public static $rules = [
         'nombre' => 'required',
-        'user_id' => 'required'
+        /* 'user_id' => 'required' */
     ];
 
     /**

@@ -32,7 +32,7 @@ body {
 
 .wrapper:before,
 .wrapper:after {
-	content: "";
+	content: " ";
 	display: table
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .layout-boxed {
-	background: url('../images/fondo.png') repeat fixed
+	background: url('../img/boxed-bg.jpg') repeat fixed
 }
 
 .content-wrapper,
@@ -92,7 +92,16 @@ body {
 }
 
 .content-wrapper {
-	background:url(https://i.ibb.co/L8cMjG5/LogoAPPb.png) center no-repeat, linear-gradient(white,gray); /*Degrade*/
+	min-height: 100%;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(95%, rgba(163,163,163,1)), color-stop(100%, rgba(163,163,163,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(163,163,163,1) 95%, rgba(163,163,163,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a3a3a3', GradientType=1 );
+	z-index: 800
 }
 
 .main-footer {
@@ -684,9 +693,9 @@ a:focus {
 }
 
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>span {
-	top: -2px;
-	margin-left: 15px;
-	padding: 8px 5px 12px 20px;
+	top: 0;
+	margin-left: -3px;
+	padding: 12px 5px 12px 20px;
 	background-color: inherit
 }
 

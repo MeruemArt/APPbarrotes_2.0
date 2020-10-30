@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ config('app.name') }}</title>
-    <link rel="shortcut icon" href="Icono.ico">
+    <link rel="shortcut icon" href={{ asset('Icono.ico') }}>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <!-- Bootstrap 3.3.7 -->
@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Theme style -->
-    <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css">-->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css"> -->
-    <link rel="stylesheet" href="css/AdminLTE.min.css">
-    <link rel="stylesheet" href="css/_all-skins.min.css">
+{{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css"> --}}
 
-     <!-- iCheck -->
+
+
+<link rel="stylesheet" href="{{ asset('css/AdminLTE.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/_all-skins.min.css') }}">
+
+
+
+       <!-- iCheck -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
@@ -38,7 +43,7 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <b><img src="images/icons/Icono.ico"></b>
+                <b><img src="{{ asset('images/icons/Icono.ico') }}"></b>
             </a>
 
             <!-- Header Navbar -->
@@ -55,7 +60,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="/images/Icono.png"
+                                <img src={{ asset('/images/Icono.png')}}
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{{ Auth::user()->name }}</span>
@@ -63,7 +68,7 @@
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="/images/Icono.png"
+                                    <img src={{ asset('/images/Icono.png')}}
                                          class="img-circle" alt="User Image"/>
                                     <p>
                                         {{ Auth::user()->name }}
@@ -99,10 +104,10 @@
             @yield('content')
         </div>
 
-        <!-- Main Footer -->
+{{--         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
             <strong>Copyright © 2020 <a href="#">Company</a>.</strong> All rights reserved.
-        </footer>
+        </footer> --}}
 
     </div>
 @else

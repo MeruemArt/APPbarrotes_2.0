@@ -7,7 +7,7 @@
 <!-- Fecha Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('fecha', 'Fecha:') !!}
-    {!! Form::text('fecha', null, ['class' => 'form-control']) !!}
+    {!! Form::date('fecha', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Unidades Field -->
@@ -29,15 +29,15 @@
 </div>
 
 <!-- User Id Field -->
-<div class="form-group col-sm-6">
+{{-- <div class="form-group col-sm-6">
     {!! Form::label('user_id', 'User Id:') !!}
     {!! Form::text('user_id', null, ['class' => 'form-control']) !!}
-</div>
+</div> --}}
 
 <!-- Proveedor Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('proveedor_id', 'Proveedor Id:') !!}
-    {!! Form::text('proveedor_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('proveedor_id', $proveedores, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

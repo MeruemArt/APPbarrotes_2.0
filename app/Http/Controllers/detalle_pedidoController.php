@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\proveedores;
+
 use App\Http\Requests\Createdetalle_pedidoRequest;
 use App\Http\Requests\Updatedetalle_pedidoRequest;
 use App\Repositories\detalle_pedidoRepository;
@@ -42,7 +44,8 @@ class detalle_pedidoController extends AppBaseController
      */
     public function create()
     {
-        return view('detalle_pedidos.create');
+        $proveedores=proveedores::all()->pluck('nombre','id');
+        return view('detalle_pedidos.create')->with('proveedores',$proveedores);
     }
 
     /**
