@@ -18,6 +18,7 @@ class estado_productoController extends AppBaseController
     public function __construct(estado_productoRepository $estadoProductoRepo)
     {
         $this->estadoProductoRepository = $estadoProductoRepo;
+        $this->middleware('auth');
     }
 
     /**

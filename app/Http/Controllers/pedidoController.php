@@ -18,6 +18,7 @@ class pedidoController extends AppBaseController
     public function __construct(pedidoRepository $pedidoRepo)
     {
         $this->pedidoRepository = $pedidoRepo;
+        $this->middleware('auth');
     }
 
     /**

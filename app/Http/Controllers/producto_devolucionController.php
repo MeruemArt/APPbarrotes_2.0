@@ -18,6 +18,7 @@ class producto_devolucionController extends AppBaseController
     public function __construct(producto_devolucionRepository $productoDevolucionRepo)
     {
         $this->productoDevolucionRepository = $productoDevolucionRepo;
+        $this->middleware('auth');
     }
 
     /**

@@ -18,6 +18,7 @@ class proveedoresController extends AppBaseController
     public function __construct(proveedoresRepository $proveedoresRepo)
     {
         $this->proveedoresRepository = $proveedoresRepo;
+        $this->middleware('auth');
     }
 
     /**

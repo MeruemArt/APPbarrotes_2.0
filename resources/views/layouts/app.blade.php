@@ -42,7 +42,7 @@
         <header class="main-header">
 
             <!-- Logo -->
-            <a href="#" class="logo">
+            <a href="/home" class="logo">
                 <b><img src="{{ asset('images/icons/Icono.ico') }}"></b>
             </a>
 

@@ -18,6 +18,7 @@ class inv_productoController extends AppBaseController
     public function __construct(inv_productoRepository $invProductoRepo)
     {
         $this->invProductoRepository = $invProductoRepo;
+        $this->middleware('auth');
     }
 
     /**

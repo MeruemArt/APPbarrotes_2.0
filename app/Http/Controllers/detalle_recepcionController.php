@@ -18,6 +18,7 @@ class detalle_recepcionController extends AppBaseController
     public function __construct(detalle_recepcionRepository $detalleRecepcionRepo)
     {
         $this->detalleRecepcionRepository = $detalleRecepcionRepo;
+        $this->middleware('auth');
     }
 
     /**

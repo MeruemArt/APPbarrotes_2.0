@@ -20,6 +20,7 @@ class detalle_pedidoController extends AppBaseController
     public function __construct(detalle_pedidoRepository $detallePedidoRepo)
     {
         $this->detallePedidoRepository = $detallePedidoRepo;
+        $this->middleware('auth');
     }
 
     /**

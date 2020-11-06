@@ -18,6 +18,7 @@ class conf_empresaController extends AppBaseController
     public function __construct(conf_empresaRepository $confEmpresaRepo)
     {
         $this->confEmpresaRepository = $confEmpresaRepo;
+        $this->middleware('auth');
     }
 
     /**

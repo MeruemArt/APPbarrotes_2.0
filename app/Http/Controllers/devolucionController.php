@@ -18,6 +18,7 @@ class devolucionController extends AppBaseController
     public function __construct(devolucionRepository $devolucionRepo)
     {
         $this->devolucionRepository = $devolucionRepo;
+        $this->middleware('auth');
     }
 
     /**
