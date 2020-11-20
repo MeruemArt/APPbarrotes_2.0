@@ -24,8 +24,8 @@
             <td>{{ $devolucion->Motivo }}</td>
             <td>{{ $devolucion->user_id }}</td>
             <td>{{ $devolucion->pedido_id }}</td>
-            <td>{{ $devolucion->proveedores_id }}</td>
-            <td>{{ $devolucion->cliente_id }}</td>
+            <td>{{ $devolucion->proveedores->nombre }}</td>
+            <td>{{ $devolucion->cliente->nombre }}</td>
                 <td>
                     {!! Form::open(['route' => ['devolucions.destroy', $devolucion->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

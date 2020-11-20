@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\proveedores;
+use App\Models\cliente;
+
 use App\Http\Requests\CreatedevolucionRequest;
 use App\Http\Requests\UpdatedevolucionRequest;
 use App\Repositories\devolucionRepository;
@@ -43,7 +46,9 @@ class devolucionController extends AppBaseController
      */
     public function create()
     {
-        return view('devolucions.create');
+        $proveedores=proveedores::all()->pluck('nombre','id');
+        $cliente=cliente::all()->pluck('nombre','id');
+        return view('devolucions.create')->with('proveedores',$proveedores)->with('cliente',$cliente);
     }
 
     /**
@@ -93,6 +98,7 @@ class devolucionController extends AppBaseController
      */
     public function edit($id)
     {
+        
         $devolucion = $this->devolucionRepository->find($id);
 
         if (empty($devolucion)) {
@@ -100,8 +106,10 @@ class devolucionController extends AppBaseController
 
             return redirect(route('devolucions.index'));
         }
+        $proveedores=proveedores::all()->pluck('nombre','id');
+        $cliente=cliente::all()->pluck('nombre','id');
 
-        return view('devolucions.edit')->with('devolucion', $devolucion);
+        return view('devolucions.edit')->with('devolucion', $devolucion)->with('proveedores',$proveedores)->with('cliente',$cliente);
     }
 
     /**

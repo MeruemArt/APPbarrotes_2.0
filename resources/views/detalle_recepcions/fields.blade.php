@@ -1,13 +1,13 @@
 <!-- Pedido Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('pedido_id', 'Pedido Id:') !!}
-    {!! Form::text('pedido_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('pedido_id', $pedido, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Detalle Pedido Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('detalle_pedido_id', 'Detalle Pedido Id:') !!}
-    {!! Form::text('detalle_pedido_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('detalle_pedido_id', $detalle_pedido, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

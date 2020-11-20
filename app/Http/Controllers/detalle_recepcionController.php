@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use \App\Models\pedido;
+use \App\Models\detalle_pedido;
+
 use App\Http\Requests\Createdetalle_recepcionRequest;
 use App\Http\Requests\Updatedetalle_recepcionRequest;
 use App\Repositories\detalle_recepcionRepository;
@@ -43,7 +46,9 @@ class detalle_recepcionController extends AppBaseController
      */
     public function create()
     {
-        return view('detalle_recepcions.create');
+        $pedido=pedido::all()->pluck('fecha_programada','id');
+        $detalle_pedido=detalle_pedido::all()->pluck('codigo_fact','id');
+        return view('detalle_recepcions.create')->with('pedido',$pedido)->with('detalle_pedido',$detalle_pedido);
     }
 
     /**
@@ -101,7 +106,10 @@ class detalle_recepcionController extends AppBaseController
             return redirect(route('detalleRecepcions.index'));
         }
 
-        return view('detalle_recepcions.edit')->with('detalleRecepcion', $detalleRecepcion);
+        $pedido=pedido::all()->pluck('fecha_programada','id');
+        $detalle_pedido=detalle_pedido::all()->pluck('codigo_fact','id');
+
+        return view('detalle_recepcions.edit')->with('detalleRecepcion', $detalleRecepcion)->with('pedido',$pedido)->with('detalle_pedido',$detalle_pedido);
     }
 
     /**

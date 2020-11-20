@@ -19,7 +19,7 @@
 </li>
 
 <li class="{{ Request::is('devolucions*') ? 'active' : '' }}">
-    <a href="{{ route('devolucions.index') }}"><i class="fa fa-cart-arrow-down"style="font-size:20px;"></i><span>&nbsp;&nbsp;Devolucions</span></a>
+    <a href="{{ route('devolucions.index') }}"><i class="fa fa-cart-arrow-down"style="font-size:20px;"></i><span>&nbsp;&nbsp;Devoluciones</span></a>
 </li>
 
 <li class="{{ Request::is('detalleRecepcions*') ? 'active' : '' }}">

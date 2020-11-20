@@ -10,9 +10,9 @@ use Eloquent as Model;
  * @version October 21, 2020, 4:29 pm UTC
  *
  * @property \App\Models\users $id
- * @property \App\Models\pedido $id
- * @property \App\Models\proveedores $id
- * @property \App\Models\cliente $id
+ * @property \App\Models\pedido $pedido
+ * @property \App\Models\proveedores $proveedores
+ * @property \App\Models\cliente $cliente
  * @property integer $codigo_fact
  * @property string $fecha
  * @property integer $unidades
@@ -82,7 +82,7 @@ class devolucion extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      **/
-    public function id()
+    public function pedido()
     {
         return $this->belongsTo(\App\Models\pedido::class, 'id', 'pedido_id');
     }
@@ -90,16 +90,16 @@ class devolucion extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      **/
-    public function id()
+    public function proveedores()
     {
-        return $this->belongsTo(\App\Models\proveedores::class, 'id', 'proveedores_id');
+        return $this->hasOne(\App\Models\proveedores::class, 'id', 'proveedores_id');
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      **/
-    public function id()
+    public function cliente()
     {
-        return $this->belongsTo(\App\Models\cliente::class, 'id', 'cliente_id');
+        return $this->hasOne(\App\Models\cliente::class, 'id', 'cliente_id');
     }
 }

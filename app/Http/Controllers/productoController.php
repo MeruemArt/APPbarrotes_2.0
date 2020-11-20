@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use \App\Models\proveedores;
+use \App\Models\estado_producto;
+use \App\Models\detalle_recepcion;
+
 use App\Http\Requests\CreateproductoRequest;
 use App\Http\Requests\UpdateproductoRequest;
 use App\Repositories\productoRepository;
@@ -43,7 +47,10 @@ class productoController extends AppBaseController
      */
     public function create()
     {
-        return view('productos.create');
+        $proveedores=proveedores::all()->pluck('nombre','id');
+        $estado_producto=estado_producto::all()->pluck('nombre','id');
+        $detalle_recepcion=detalle_recepcion::all()->pluck('id');
+        return view('productos.create')->with('proveedores',$proveedores)->with('estado_producto',$estado_producto)->with('detalle_recepcion',$detalle_recepcion);
     }
 
     /**
@@ -101,7 +108,11 @@ class productoController extends AppBaseController
             return redirect(route('productos.index'));
         }
 
-        return view('productos.edit')->with('producto', $producto);
+        $proveedores=proveedores::all()->pluck('nombre','id');
+        $estado_producto=estado_producto::all()->pluck('nombre','id');
+        $detalle_recepcion=detalle_recepcion::all()->pluck('id');
+
+        return view('productos.edit')->with('producto', $producto)->with('proveedores',$proveedores)->with('estado_producto',$estado_producto)->with('detalle_recepcion',$detalle_recepcion);
     }
 
     /**

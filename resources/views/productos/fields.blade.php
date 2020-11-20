@@ -13,19 +13,19 @@
 <!-- Proveedores Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('proveedores_id', 'Proveedores Id:') !!}
-    {!! Form::text('proveedores_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('proveedor_id', $proveedores, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Estado Producto Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('estado_producto_id', 'Estado Producto Id:') !!}
-    {!! Form::text('estado_producto_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('estado_producto_id', $estado_producto, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Detalle Recepcion Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('detalle_recepcion_id', 'Detalle Recepcion Id:') !!}
-    {!! Form::text('detalle_recepcion_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('detalle_recepcion_id', $detalle_recepcion, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

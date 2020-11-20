@@ -7,7 +7,7 @@
 <!-- Fecha Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('fecha', 'Fecha:') !!}
-    {!! Form::text('fecha', null, ['class' => 'form-control']) !!}
+    {!! Form::date('fecha', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Unidades Field -->
@@ -29,10 +29,11 @@
 </div>
 
 <!-- User Id Field -->
+{{-- <div class="form-group col-sm-6">
 <div class="form-group col-sm-6">
     {!! Form::label('user_id', 'User Id:') !!}
-    {!! Form::text('user_id', null, ['class' => 'form-control']) !!}
-</div>
+    {!! Form::text('user_id', null, ['class' => 'form-control']) !!} -->
+</div> --}}
 
 <!-- Pedido Id Field -->
 <div class="form-group col-sm-6">
@@ -42,14 +43,14 @@
 
 <!-- Proveedores Id Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('proveedores_id', 'Proveedores Id:') !!}
-    {!! Form::text('proveedores_id', null, ['class' => 'form-control']) !!}
+    {!! Form::label('proveedores_id', 'Proveedor Id:') !!}
+    {!! Form::select('proveedores_id', $proveedores, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Cliente Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('cliente_id', 'Cliente Id:') !!}
-    {!! Form::text('cliente_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('cliente_id', $cliente, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

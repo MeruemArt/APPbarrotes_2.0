@@ -103,8 +103,9 @@ class detalle_pedidoController extends AppBaseController
 
             return redirect(route('detallePedidos.index'));
         }
+        $proveedores=proveedores::all()->pluck('nombre','id');
 
-        return view('detalle_pedidos.edit')->with('detallePedido', $detallePedido);
+        return view('detalle_pedidos.edit')->with('detallePedido', $detallePedido)->with('proveedores',$proveedores);
     }
 
     /**

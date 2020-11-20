@@ -43,7 +43,7 @@ class pedido extends Model
      * @var array
      */
     public static $rules = [
-        'user_id' => 'required'
+        
     ];
 
     /**
