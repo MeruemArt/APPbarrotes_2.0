@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use app\Models\User;
+
 use App\Http\Requests\CreateproveedoresRequest;
 use App\Http\Requests\UpdateproveedoresRequest;
 use App\Repositories\proveedoresRepository;
@@ -43,7 +45,8 @@ class proveedoresController extends AppBaseController
      */
     public function create()
     {
-        return view('proveedores.create');
+        $user=user::all()->pluck('name','id');
+        return view('proveedores.create')->with('user',$user);
     }
 
     /**
@@ -100,8 +103,8 @@ class proveedoresController extends AppBaseController
 
             return redirect(route('proveedores.index'));
         }
-
-        return view('proveedores.edit')->with('proveedores', $proveedores);
+        $user=user::all()->pluck('name','id');
+        return view('proveedores.edit')->with('proveedores', $proveedores)->with('user',$user);
     }
 
     /**

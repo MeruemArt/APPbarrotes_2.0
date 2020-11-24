@@ -49,8 +49,8 @@ class pedido extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      **/
-    public function id()
+    public function user()
     {
-        return $this->belongsTo(\App\Models\users::class, 'id', 'user_id');
+        return $this->hasOne(\App\Models\user::class, 'id', 'user_id');
     }
 }

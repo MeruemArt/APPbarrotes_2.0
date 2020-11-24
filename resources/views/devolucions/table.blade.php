@@ -22,7 +22,7 @@
             <td>{{ $devolucion->unidades }}</td>
             <td>{{ $devolucion->total }}</td>
             <td>{{ $devolucion->Motivo }}</td>
-            <td>{{ $devolucion->user_id }}</td>
+            <td>{{ $devolucion->user->name  }}</td>
             <td>{{ $devolucion->pedido_id }}</td>
             <td>{{ $devolucion->proveedores->nombre }}</td>
             <td>{{ $devolucion->cliente->nombre }}</td>

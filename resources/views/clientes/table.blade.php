@@ -17,7 +17,7 @@
             <td>{{ $cliente->nit }}</td>
             <td>{{ $cliente->direccion }}</td>
             <td>{{ $cliente->telefono }}</td>
-            <td>{{ $cliente->user_id }}</td>
+            <td>{{ $cliente->user->name  }}</td>
                 <td>
                     {!! Form::open(['route' => ['clientes.destroy', $cliente->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

@@ -17,7 +17,7 @@
             <td>{{ $proveedores->nit }}</td>
             <td>{{ $proveedores->direccion }}</td>
             <td>{{ $proveedores->telefono }}</td>
-            <td>{{ $proveedores->user_id }}</td>
+            <td>{{  $proveedores->user->name  }}</td>
                 <td>
                     {!! Form::open(['route' => ['proveedores.destroy', $proveedores->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

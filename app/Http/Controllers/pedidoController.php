@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use app\Models\User;
+
 use App\Http\Requests\CreatepedidoRequest;
 use App\Http\Requests\UpdatepedidoRequest;
 use App\Repositories\pedidoRepository;
@@ -43,7 +45,8 @@ class pedidoController extends AppBaseController
      */
     public function create()
     {
-        return view('pedidos.create');
+        $user=user::all()->pluck('name','id');
+        return view('pedidos.create')->with('user',$user);
     }
 
     /**
@@ -100,8 +103,8 @@ class pedidoController extends AppBaseController
 
             return redirect(route('pedidos.index'));
         }
-
-        return view('pedidos.edit')->with('pedido', $pedido);
+        $user=user::all()->pluck('name','id');
+        return view('pedidos.edit')->with('pedido', $pedido)->with('user',$user);
     }
 
     /**

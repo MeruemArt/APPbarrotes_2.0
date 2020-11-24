@@ -20,7 +20,7 @@
             <td>{{ $detallePedido->unidades }}</td>
             <td>{{ $detallePedido->valor }}</td>
             <td>{{ $detallePedido->telefono }}</td>
-            <td>{{ $detallePedido->user_id }}</td>
+            <td>{{ $detallePedido->user->name  }}</td>
             <td>{{ $detallePedido->proveedores->nombre }}</td>
                 <td>
                     {!! Form::open(['route' => ['detallePedidos.destroy', $detallePedido->id], 'method' => 'delete']) !!}

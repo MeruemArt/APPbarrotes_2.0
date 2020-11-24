@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\proveedores;
+use App\Models\user;
 
 use App\Http\Requests\Createdetalle_pedidoRequest;
 use App\Http\Requests\Updatedetalle_pedidoRequest;
@@ -46,7 +47,8 @@ class detalle_pedidoController extends AppBaseController
     public function create()
     {
         $proveedores=proveedores::all()->pluck('nombre','id');
-        return view('detalle_pedidos.create')->with('proveedores',$proveedores);
+        $user=user::all()->pluck('name','id');
+        return view('detalle_pedidos.create')->with('proveedores',$proveedores)->with('user',$user);
     }
 
     /**
@@ -104,8 +106,8 @@ class detalle_pedidoController extends AppBaseController
             return redirect(route('detallePedidos.index'));
         }
         $proveedores=proveedores::all()->pluck('nombre','id');
-
-        return view('detalle_pedidos.edit')->with('detallePedido', $detallePedido)->with('proveedores',$proveedores);
+        $user=user::all()->pluck('name','id');
+        return view('detalle_pedidos.edit')->with('detallePedido', $detallePedido)->with('proveedores',$proveedores)->with('user',$user);
     }
 
     /**

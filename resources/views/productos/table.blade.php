@@ -15,8 +15,8 @@
             <tr>
                 <td>{{ $producto->valor_E }}</td>
             <td>{{ $producto->valor_S }}</td>
-            <td>{{ $producto->proveedores_id }}</td>
-            <td>{{ $producto->estado_producto_id }}</td>
+            <td>{{ $producto->proveedores->nombre }}</td>
+            <td>{{ $producto->estadoProducto->nombre }}</td>
             <td>{{ $producto->detalle_recepcion_id }}</td>
                 <td>
                     {!! Form::open(['route' => ['productos.destroy', $producto->id], 'method' => 'delete']) !!}

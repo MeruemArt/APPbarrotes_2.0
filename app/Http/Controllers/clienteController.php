@@ -44,11 +44,9 @@ class clienteController extends AppBaseController
      */
     public function create()
     {
-        
-      /*  $users=user::all()->pluck('name','id');*/
-      
-        return view('clientes.create')/*->with('users',$users)*/;
-       
+        $user=user::all()->pluck('name','id');
+        return view('clientes.create')->with('user',$user);
+
     }
 
     /**
@@ -105,8 +103,8 @@ class clienteController extends AppBaseController
 
             return redirect(route('clientes.index'));
         }
-
-        return view('clientes.edit')->with('cliente', $cliente);
+        $user=user::all()->pluck('name','id');
+        return view('clientes.edit')->with('cliente', $cliente)->with('user',$user);
     }
 
     /**

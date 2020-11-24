@@ -11,7 +11,7 @@
         @foreach($pedidos as $pedido)
             <tr>
                 <td>{{ $pedido->fecha_programada }}</td>
-            <td>{{ $pedido->user_id }}</td>
+                <td>{{ $pedido->user->name  }}</td>
                 <td>
                     {!! Form::open(['route' => ['pedidos.destroy', $pedido->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

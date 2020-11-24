@@ -59,8 +59,9 @@ class proveedores extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      **/
-    public function users()
+    public function user()
     {
-        return $this->hasOne(\App\Models\users::class, 'id', 'user_id');
+        return $this->hasOne(\App\Models\user::class, 'id', 'user_id');
     }
+   
 }

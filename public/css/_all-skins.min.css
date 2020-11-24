@@ -1,5 +1,5 @@
 .skin-blue .main-header .navbar {
-	background-color: #222D32 /*8b14f9*/
+	background-color: #2E2E2E /*8b14f9*/
 }
 
 .skin-blue .main-header .navbar .nav>li>a {
@@ -31,7 +31,7 @@
 }
 
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
-	background-color: #1F282D /*Boton 3 lineas #7005D2 */
+	background-color: #1B1B1B /*Boton 3 lineas #7005D2 */
 }
 
 @media (max-width:767px) {
@@ -47,17 +47,17 @@
 }
 
 .skin-blue .main-header .logo {
-	background-color: #222D32; /*Fondo Icono superior izquierdo sin seleccion #7005D2 */
+	background-color: #1B1B1B; /*Fondo Icono superior izquierdo sin seleccion #7005D2 */
 	color: #fff;
 	border-bottom: 0 solid transparent
 }
 
 .skin-blue .main-header .logo:hover {
-	background-color: #1F282D /*Fondo Icono superior izquierdo seleccion #340263 */
+	background-color: #2E2E2E /*Fondo Icono superior izquierdo seleccion #340263 */
 }
 
 .skin-blue .main-header li.user-header {
-	background-color: #222D32 /*8b14f9*/ 
+	background-color: #1B1B1B /*8b14f9*/ 
 }
 
 .skin-blue .content-header {
@@ -67,7 +67,7 @@
 .skin-blue .wrapper,
 .skin-blue .main-sidebar,
 .skin-blue .left-side {
-	background-color: #222d32
+	background-color: #1B1B1B
 }
 
 .skin-blue .user-panel>.info,
@@ -200,7 +200,7 @@
 }
 
 .skin-blue-light .main-header .navbar .sidebar-toggle:hover {
-	background-color: #222D32 /*7005D2 */
+	background-color: #1B1B1B /*7005D2 */
 }
 
 @media (max-width:767px) {
