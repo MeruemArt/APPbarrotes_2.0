@@ -10,6 +10,7 @@ use App\Repositories\pedidoRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
+use Auth;
 use Response;
 
 class pedidoController extends AppBaseController
@@ -59,6 +60,8 @@ class pedidoController extends AppBaseController
     public function store(CreatepedidoRequest $request)
     {
         $input = $request->all();
+
+        $input['user_id'] = Auth::user()->id;
 
         $pedido = $this->pedidoRepository->create($input);
 

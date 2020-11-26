@@ -29,7 +29,7 @@ class cliente extends Model
         'nit',
         'direccion',
         'telefono',
-        'user_id'
+        'user_id' 
     ];
 
     /**

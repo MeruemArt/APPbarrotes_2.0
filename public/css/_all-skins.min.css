@@ -87,8 +87,8 @@
 .skin-blue .sidebar-menu>li:hover>a,
 .skin-blue .sidebar-menu>li.active>a,
 .skin-blue .sidebar-menu>li.menu-open>a {
-	color: #fff;
-	background: #1e282c
+	color: #8b14f9/*fff*/;
+	background: #1B1B1B/*1e282c*/
 }
 
 .skin-blue .sidebar-menu>li.active>a {

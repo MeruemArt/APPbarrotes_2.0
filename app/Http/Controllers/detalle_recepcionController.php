@@ -62,6 +62,8 @@ class detalle_recepcionController extends AppBaseController
     {
         $input = $request->all();
 
+        $input['user_id'] = Auth::user()->id;
+
         $detalleRecepcion = $this->detalleRecepcionRepository->create($input);
 
         Flash::success('Detalle Recepcion saved successfully.');

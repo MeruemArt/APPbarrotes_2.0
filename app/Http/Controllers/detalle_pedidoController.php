@@ -11,6 +11,7 @@ use App\Repositories\detalle_pedidoRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
+use Auth;
 use Response;
 
 class detalle_pedidoController extends AppBaseController
@@ -61,6 +62,8 @@ class detalle_pedidoController extends AppBaseController
     public function store(Createdetalle_pedidoRequest $request)
     {
         $input = $request->all();
+
+        $input['user_id'] = Auth::user()->id;
 
         $detallePedido = $this->detallePedidoRepository->create($input);
 

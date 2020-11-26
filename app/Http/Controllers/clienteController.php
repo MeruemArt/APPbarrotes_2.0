@@ -7,8 +7,10 @@ use App\Http\Requests\CreateclienteRequest;
 use App\Http\Requests\UpdateclienteRequest;
 use App\Repositories\clienteRepository;
 use App\Http\Controllers\AppBaseController;
+
 use Illuminate\Http\Request;
 use Flash;
+use Auth;
 use Response;
 
 class clienteController extends AppBaseController
@@ -16,10 +18,11 @@ class clienteController extends AppBaseController
     /** @var  clienteRepository */
     private $clienteRepository;
 
-    public function __construct(clienteRepository $clienteRepo)
+    public function __construct(clienteRepository $clienteRepo )
     {
         $this->clienteRepository = $clienteRepo;
         $this->middleware('auth');
+        
     }
 
     /**
@@ -58,7 +61,12 @@ class clienteController extends AppBaseController
      */
     public function store(CreateclienteRequest $request)
     {
-        $input = $request->all();
+        /* $data = $request->all();
+        $data['user_id'] = \Auth::user()->id;  */
+
+        $input = $request->all();  
+
+        $input['user_id'] = Auth::user()->id;
 
         $cliente = $this->clienteRepository->create($input);
 

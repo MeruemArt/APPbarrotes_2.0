@@ -10,6 +10,7 @@ use App\Repositories\proveedoresRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
+use Auth;
 use Response;
 
 class proveedoresController extends AppBaseController
@@ -59,6 +60,8 @@ class proveedoresController extends AppBaseController
     public function store(CreateproveedoresRequest $request)
     {
         $input = $request->all();
+
+        $input['user_id'] = Auth::user()->id;
 
         $proveedores = $this->proveedoresRepository->create($input);
 

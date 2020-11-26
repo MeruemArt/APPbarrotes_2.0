@@ -12,6 +12,7 @@ use App\Repositories\devolucionRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
+use Auth;
 use Response;
 
 class devolucionController extends AppBaseController
@@ -63,6 +64,8 @@ class devolucionController extends AppBaseController
     public function store(CreatedevolucionRequest $request)
     {
         $input = $request->all();
+
+        $input['user_id'] = Auth::user()->id;
 
         $devolucion = $this->devolucionRepository->create($input);
 
