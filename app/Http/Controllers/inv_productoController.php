@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use \app\Models\User;
+use \App\Models\producto;
+
 use App\Http\Requests\Createinv_productoRequest;
 use App\Http\Requests\Updateinv_productoRequest;
 use App\Repositories\inv_productoRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
+use Auth;
 use Response;
 
 class inv_productoController extends AppBaseController
@@ -43,7 +47,9 @@ class inv_productoController extends AppBaseController
      */
     public function create()
     {
-        return view('inv_productos.create');
+        $user=user::all()->pluck('name','id');
+        $producto=producto::all()->pluck('nombre','id');
+        return view('inv_productos.create')->with('user',$user)->with('producto',$producto);
     }
 
     /**
@@ -56,6 +62,8 @@ class inv_productoController extends AppBaseController
     public function store(Createinv_productoRequest $request)
     {
         $input = $request->all();
+
+        $input['user_id'] = Auth::user()->id;
 
         $invProducto = $this->invProductoRepository->create($input);
 
@@ -100,8 +108,10 @@ class inv_productoController extends AppBaseController
 
             return redirect(route('invProductos.index'));
         }
-
-        return view('inv_productos.edit')->with('invProducto', $invProducto);
+        $user=user::all()->pluck('name','id');
+        $producto=producto::all()->pluck('nombre','id');
+       
+        return view('inv_productos.edit')->with('invProducto', $invProducto)->with('user',$user)->with('producto',$producto);
     }
 
     /**

@@ -64,8 +64,8 @@ class inv_producto extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      **/
-    public function productos()
+    public function producto()
     {
-        return $this->hasMany(\App\Models\producto::class, 'id', 'producto_id');
+        return $this->hasOne(\App\Models\producto::class, 'id', 'producto_id');
     }
 }

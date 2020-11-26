@@ -2,7 +2,8 @@
     <table class="table" id="productos-table">
         <thead>
             <tr>
-                <th>Valor E</th>
+                <th>Nombre</th>
+        <th>Valor E</th>
         <th>Valor S</th>
         <th>Proveedores Id</th>
         <th>Estado Producto Id</th>
@@ -13,10 +14,11 @@
         <tbody>
         @foreach($productos as $producto)
             <tr>
-                <td>{{ $producto->valor_E }}</td>
+                <td>{{ $producto->nombre }}</td>
+            <td>{{ $producto->valor_E }}</td>
             <td>{{ $producto->valor_S }}</td>
             <td>{{ $producto->proveedores->nombre }}</td>
-            <td>{{ $producto->estadoProducto->nombre }}</td>
+            <td>{{ $producto->estado_producto->nombre }}</td>
             <td>{{ $producto->detalle_recepcion_id }}</td>
                 <td>
                     {!! Form::open(['route' => ['productos.destroy', $producto->id], 'method' => 'delete']) !!}

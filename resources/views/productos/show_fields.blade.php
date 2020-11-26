@@ -4,6 +4,12 @@
     <p>{{ $producto->id }}</p>
 </div>
 
+<!-- nombre Field -->
+<div class="form-group">
+    {!! Form::label('nombre', 'nombre:') !!}
+    <p>{{ $producto->nombre }}</p>
+</div>
+
 <!-- Valor E Field -->
 <div class="form-group">
     {!! Form::label('valor_E', 'Valor E:') !!}

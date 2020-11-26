@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
+use Illuminate\Support\Facades\Storage;
+
 use App\Http\Requests\Createconf_empresaRequest;
 use App\Http\Requests\Updateconf_empresaRequest;
 use App\Repositories\conf_empresaRepository;
@@ -56,6 +59,7 @@ class conf_empresaController extends AppBaseController
     public function store(Createconf_empresaRequest $request)
     {
         $input = $request->all();
+
 
         $confEmpresa = $this->confEmpresaRepository->create($input);
 

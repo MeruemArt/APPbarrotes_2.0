@@ -12,6 +12,7 @@ use Eloquent as Model;
  * @property \App\Models\proveedores $proveedores
  * @property \App\Models\estado_producto $estadoProducto
  * @property \App\Models\detalle_recepcion $detalleRecepcion
+ * @property string $nombre
  * @property number $valor_E
  * @property number $valor_S
  * @property integer $proveedores_id
@@ -27,6 +28,7 @@ class producto extends Model
 
 
     public $fillable = [
+        'nombre',
         'valor_E',
         'valor_S',
         'proveedores_id',
@@ -40,6 +42,7 @@ class producto extends Model
      * @var array
      */
     protected $casts = [
+        'nombre' => 'string',
         'id' => 'integer',
         'valor_E' => 'double',
         'valor_S' => 'double',
@@ -68,7 +71,7 @@ class producto extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      **/
-    public function estadoProducto()
+    public function estado_producto()
     {
         return $this->hasOne(\App\Models\estado_producto::class, 'id', 'estado_producto_id');
     }

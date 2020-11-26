@@ -12,8 +12,8 @@
         @foreach($productoDevolucions as $productoDevolucion)
             <tr>
                 <td>{{ $productoDevolucion->fecha }}</td>
-            <td>{{ $productoDevolucion->cliente_id }}</td>
-            <td>{{ $productoDevolucion->producto_id }}</td>
+            <td>{{ $productoDevolucion->cliente->nombre }}</td>
+            <td>{{ $productoDevolucion->producto->nombre }}</td>
                 <td>
                     {!! Form::open(['route' => ['productoDevolucions.destroy', $productoDevolucion->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

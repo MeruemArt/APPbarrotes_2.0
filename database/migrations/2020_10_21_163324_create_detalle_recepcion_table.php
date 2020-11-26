@@ -18,6 +18,7 @@ class CreateDetalleRecepcionTable extends Migration
             $table->increments('id');
             $table->integer('pedido_id');
             $table->integer('detalle_pedido_id');
+            $table->timestamps();
         });
     }
 

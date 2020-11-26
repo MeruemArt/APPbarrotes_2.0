@@ -1,19 +1,19 @@
 <!-- Fecha Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('fecha', 'Fecha:') !!}
-    {!! Form::text('fecha', null, ['class' => 'form-control']) !!}
+    {!! Form::date('fecha', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Cliente Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('cliente_id', 'Cliente Id:') !!}
-    {!! Form::text('cliente_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('cliente_id', $cliente, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Producto Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('producto_id', 'Producto Id:') !!}
-    {!! Form::text('producto_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('producto_id', $producto, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

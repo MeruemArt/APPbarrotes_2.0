@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\cliente;
+use App\Models\producto;
+
 use App\Http\Requests\Createproducto_devolucionRequest;
 use App\Http\Requests\Updateproducto_devolucionRequest;
 use App\Repositories\producto_devolucionRepository;
@@ -43,7 +46,9 @@ class producto_devolucionController extends AppBaseController
      */
     public function create()
     {
-        return view('producto_devolucions.create');
+        $cliente=cliente::all()->pluck('nombre','id');
+        $producto=producto::all()->pluck('nombre','id');
+        return view('producto_devolucions.create')->with('cliente',$cliente)->with('producto',$producto);
     }
 
     /**
@@ -100,8 +105,10 @@ class producto_devolucionController extends AppBaseController
 
             return redirect(route('productoDevolucions.index'));
         }
+        $cliente=cliente::all()->pluck('nombre','id');
+        $producto=producto::all()->pluck('nombre','id');
 
-        return view('producto_devolucions.edit')->with('productoDevolucion', $productoDevolucion);
+        return view('producto_devolucions.edit')->with('productoDevolucion', $productoDevolucion)->with('cliente',$cliente)->with('producto',$producto);
     }
 
     /**

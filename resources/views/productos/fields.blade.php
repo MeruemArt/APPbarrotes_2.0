@@ -1,3 +1,9 @@
+<!-- Nombre Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('nombre', 'Nombre:') !!}
+    {!! Form::text('nombre', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Valor E Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('valor_E', 'Valor E:') !!}
@@ -19,7 +25,7 @@
 <!-- Estado Producto Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('estado_producto_id', 'Estado Producto Id:') !!}
-    {!! Form::select('estado_producto_id', $estadoProducto, null, ['class' => 'form-control']) !!}
+    {!! Form::select('estado_producto_id', $estado_producto, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Detalle Recepcion Id Field -->

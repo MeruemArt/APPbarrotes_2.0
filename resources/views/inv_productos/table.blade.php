@@ -14,8 +14,8 @@
             <tr>
                 <td>{{ $invProducto->fecha }}</td>
             <td>{{ $invProducto->stock }}</td>
-            <td>{{ $invProducto->user_id }}</td>
-            <td>{{ $invProducto->producto_id }}</td>
+            <td>{{ $invProducto->user->name }}</td>
+            <td>{{ $invProducto->producto->nombre }}</td>
                 <td>
                     {!! Form::open(['route' => ['invProductos.destroy', $invProducto->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
